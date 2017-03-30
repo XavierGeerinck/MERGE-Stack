@@ -1,0 +1,5 @@
+.DS_STORE
+node_modules
+*~
+.next
+npm-debug.log
