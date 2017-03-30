@@ -7,7 +7,7 @@ const cookieParser = require('cookie-parser');
 const cookie = require('react-cookie');
 
 const dev = process.env.NODE_ENV !== 'production'
-const app = next({ dir: '.', dev })
+const app = next({ dir: './src', dev })
 const handle = app.getRequestHandler()
 
 app.prepare()

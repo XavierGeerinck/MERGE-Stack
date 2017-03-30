@@ -6,7 +6,8 @@
   "description": "The MERGE stack server, utilizing Next.js for Server Side Rendering, Sequelize for database interaction, GraphQL for endpoint communication",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./index.js --exec babel-node -e js",
+    "dev": "nodemon ./index.js --exec babel-node -e js",
+    "start": "babel ./src -d ./dist && node ./dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

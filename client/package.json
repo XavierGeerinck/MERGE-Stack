@@ -6,8 +6,8 @@
   "description": "The MERGE stack client, utilizing Next.js and Apollo for easy creation of Universal Javascript apps",
   "scripts": {
     "build": "next build",
-    "start": "nodemon ./index.js --exec babel-node -e js",
-    "start-prod": "NODE_ENV=production nodemon ./index.js --exec babel-node -e js"
+    "dev": "nodemon ./src/index.js --exec babel-node -e js",
+    "start": "node ./src/index.js"
   },
   "license": "MIT",
   "devDependencies": {

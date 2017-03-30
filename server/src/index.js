@@ -1,9 +1,10 @@
 import express from 'express';
 import graphqlHTTP from 'express-graphql';
-import { schema } from './src/schema';
+import { schema } from './schema';
 import cors from 'cors';
 import morgan from 'morgan';
-const UserTokenModel = require('./src/db/models/').userToken;
+import { userToken as UserTokenModel } from './db/models';
+// const UserTokenModel = require('./db/models/').userToken;
 
 const PORT = 4000;
 
@@ -56,7 +57,7 @@ server.use('/graphql', cors(), graphqlHTTP((request) => ({
     schema: schema,
     graphiql: true,
     pretty: true,
-    context: require('./src/resolvers'),
+    context: require('./resolvers'),
     rootValue: {
       user: request.user
     }
