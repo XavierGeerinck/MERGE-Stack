@@ -5,7 +5,7 @@ let apolloClient = null
 
 function _initClient(headers, initialState) {
   const networkInterface = createNetworkInterface({
-    uri: 'http://127.0.0.1:4000/graphql',
+    uri: 'http://localhost:4000/graphql',
     opts: {
       credentials: 'same-origin'
       // Pass headers here if your graphql server requires them

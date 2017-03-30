@@ -27,8 +27,20 @@ The technologies and features used within this project are:
 1. `cd server/`
 2. `npm install` (or `yarn`)
 3. `npm install -g sequelize-cli` (Installation of the Database Manager)
+4. `npm install mysql` (Install the MySQL connector, or see http://docs.sequelizejs.com/en/v3/docs/getting-started/ for more)
 4. `sequelize db:migrate` (Create the initial database schema, to adapt these configs, see: `server/config/config.js`)
 3. `npm run dev` (or `yarn run dev`)
+
+> Note: Make sure that enough memory is available for the build process (1Gb recommended). You can also use swap through the following commands
+
+```
+sudo fallocate -l 1G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+sudo cp /etc/fstab /etc/fstab.bak
+echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+```
 
 ### Authentication Details
 Authentication has to be supported on both the server and client side. Therefor the cookies are used to accomplish this. We are able to provide the server with the client's cookie, where the token can be extracted from. Once this token has been read, the user can be authenticated on the server through a GraphQL call from the Client Server to the Main Server. Once the user is logged in, the client can take over by adding this same token from the cookie to an `Authorization: Bearer <token>` header. This is also the header that is used on the Client Server to authenticate the user with the token on the Main Server.
