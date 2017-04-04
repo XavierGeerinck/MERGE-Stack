@@ -1,18 +1,18 @@
 # MERGE Stack
 ## About
-Since the rise of new client-side frameworks such as Angular, React and many others. A lot of code gets written and executed on the client-side. Resulting in a decreased performance, bad SEO, increased bandwith and many other issues. On the contrary side, client-side applications also have stronger points such as an improved UX flow, faster transitions and others. The question that we have to ask ourselves here, is how we are able to keep the advantages, and eliminate the disadvantages. Resulting in the rise of Universal Javascript applications.
+Since the rise of new client-side frameworks such as Angular, React and many others. A lot of code gets written and executed on the client-side. Resulting in a decreased performance, bad SEO, increased bandwidth  and many other issues. On the contrary side, client-side applications also have stronger points such as an improved UX flow, faster transitions and others. The question that we have to ask ourselves here, is how we are able to keep the advantages, and eliminate the disadvantages. Resulting in the rise of Universal Javascript applications.
 
 These Universal Javascript applications [1](https://github.com/facebook/react/pull/4041) combine the power of Server Side and Client Side rendering to create applications that can run in servers, browsers and mobile devices. To improve SEO, initial load performance and many others.
 
 The MERGE stack now offers a set of languages, tools and frameworks that allow the developer to get started with developing Universal Javascript applications in a short period of time, without the need of researching the best tools to use and combine.
 
-It exists out of cutting edge technology such as MySQL, Express, React and GraphQL. Allowing for applications to be written in a modular way, and keeping the bandwith requirements as optimal as possible.
+It exists out of cutting edge technology such as MySQL, Express, React and GraphQL. Allowing for applications to be written in a modular way, and keeping the bandwidth requirements as optimal as possible.
 
 ## Stack
 * [MySQL](https://www.mysql.com/): Database engine used to store our data, this can easily be interchanged with any other relational database engine such as Postgres, MSSQL, Oracle SQL, ...
 * [Express](https://expressjs.com/): Web application framework used to route GraphQL requests and apply authorization
 * [React](https://facebook.github.io/react/): A Javascript library for building user interfaces
-* [GraphQL](http://graphql.org/): A query language for your API, decreasing the bandwith utilized and replacing REST calls
+* [GraphQL](http://graphql.org/): A query language for your API, decreasing the bandwidth utilized and replacing REST calls
 * [Next.js](https://zeit.co/blog/next): A framework that implements Server Side rendering
 * [Apollo Client](https://github.com/apollographql/apollo-client): A easy to use client to connect the UI to our GraphQL server.
 
