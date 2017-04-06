@@ -1,0 +1,39 @@
+{
+  "author": "Xavier Geerinck",
+  "name": "merge-stack-client",
+  "url": "git@github.com:thebillkidy/MERGE-Stack.git",
+  "version": "0.0.1",
+  "description": "The MERGE stack client, utilizing Next.js and Apollo for easy creation of Universal Javascript apps",
+  "scripts": {
+    "build": "next build",
+    "dev": "nodemon ./src/index.js --exec babel-node -e js",
+    "start": "NODE_ENV=production next build ./src && node ./src/index.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "nodemon": "^1.11.0"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "ignore": [
+      "**/node_modules/**"
+    ]
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.2",
+    "express-session": "^1.15.2",
+    "graphql": "^0.9.1",
+    "next": "^2.0.0-beta",
+    "nprogress": "^0.2.0",
+    "react": "^15.4.2",
+    "react-apollo": "^1.0.0",
+    "react-cookie": "^1.0.5",
+    "redux": "^3.6.0",
+    "wreck": "^12.0.0"
+  }
+}

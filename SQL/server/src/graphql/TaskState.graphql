@@ -1,0 +1,6 @@
+enum TaskState {
+    TASK_INBOX
+    TASK_PINNED
+    TASK_SNOOZED
+    TASK_ARCHIVED
+}
