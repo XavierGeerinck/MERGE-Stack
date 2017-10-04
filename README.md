@@ -54,3 +54,11 @@ For the client side, we can just read this token, and add it as a `Authorization
 The server can now lookup this token and add the user to the request for easy usage.
 
 > Note that the choice was made to process the user in a middleware layer, to make this user easily available in the further layers of our application.
+
+## Directory Structure
+The main project is structured in different database engine folders. This is done to prove the working of the project for different engines.
+
+* GRAPH: Contains the project running on a GRAPH Database
+* SQL: Contains the project running on a SQL Database
+
+More engines might be added later on, or can be requested through the issue tracker
